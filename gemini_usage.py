@@ -12,10 +12,6 @@ def stream_response(prompt:str):
     stream=client.models.generate_content_stream(
         model="gemini-2.5-flash",
         contents=prompt,
-        config={
-            "max_output_tokens": 1000,
-            "temperature": 0.3          
-        }
     )
 
     for chunk in stream:
