@@ -1,0 +1,4 @@
+google-genai 
+huggingface_hub 
+openai 
+python-dotenv
